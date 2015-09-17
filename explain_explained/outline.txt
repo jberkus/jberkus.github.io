@@ -1,0 +1,48 @@
+explaining explain
+
+explain wut?
+
+    what explain does
+        query planner basics
+    explain output
+    explain options
+        analyze
+        buffers
+        costs, timing
+        formats
+        verbose
+    
+reading explain
+
+    inverted tree
+    concurrency
+    reading one line of EXPLAIN
+        make it easier: YAML
+        cost
+        time 
+        loops
+        object names
+        filter conditions
+
+an explain vocabulary
+    scans
+        seq
+        index
+        bitmap
+        index-only
+    joins
+        join types
+    aggregates
+    sorts
+    other stuff:
+        materialize
+        CTEscans
+        subqueryscans
+
+thinks to look for:
+    no index/wrong index
+    bad row estimates
+
+wierdnesses
+    abort-early plans
+    "never executed"
