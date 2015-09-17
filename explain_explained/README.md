@@ -1,7 +1,7 @@
-PostgreSQL Performance in 15 Minutes
-====================================
+Explain Explained
+=================
 
-Talk on making PostgreSQL perform well for Django, given at DjangoCon 2015.
+Talk on how to use EXPLAIN, given at Postgres Open 2015.
 
 Written in Remark.js.  This presentation requires a local webserver to view; 
 I suggest running:
@@ -10,5 +10,4 @@ I suggest running:
      
 ... in the directory of the talk.
 
-Yes, I know the CSS is terrible.  I'm not a web developer, and this is my first 
-Remark.js presentation.  Pull requests welcome.
+Yes, I know the CSS is terrible.  I'm not a web developer.  Pull requests welcome.
