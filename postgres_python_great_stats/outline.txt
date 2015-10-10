@@ -1,0 +1,46 @@
+Great Stats
+
+SciPy is Awesome
+    stats functions
+    significance
+    graphs
+
+PostgreSQL is Awesome
+    scalability
+    concurrency engine
+    primitive stats
+
+Two Great Tastes That Taste Great Together
+    pl/python
+        what's a PL?
+        how to install
+            limitations
+        adding in scipy
+
+Why bother?
+    the round-trip issue
+    windowing---
+    correlations
+
+Putting it together
+    ad-hoc analysis
+    wouldn't it be great if ...
+    supporting stuff
+        arrays
+        hstore
+        custom aggregates
+        windowing queries
+        materialized views
+        PostGIS
+
+Examples
+    stats over public data
+    chi square over public data
+    custom circular percentile
+    stats by geography
+    pregenerate graphs window function
+
+
+    
+
+        

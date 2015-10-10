@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EXPLAIN Explianed</title>
+    <title>Postgres + Python For Great Stats!</title>
     <meta charset="utf-8">
         <style type="text/css">
 /* Basic theme for remark slides */
 
+@font-face {
+    font-family: gravitas_one;
+    src: local(GravitasOne), url('GravitasOne.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: kreon_regular;
+    src: local(Kreon-Regular), url('Kreon-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: kreon_bold;
+    src: local(Kreon-Regular), url('Kreon-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: bevan;
+    src: local(Bevan), url('Bevan.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: merriweather_ultrabold;
+    src: local(Merriweather-Ultrabold), url('Merriweather-UltraBold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: tienne_heavy;
+    src: local(Tienne-Heavy), url('Tienne/Tienne-Heavy.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: volkhorn_bold;
+    src: local(Vollkhorn-Bold), url('Vollkorn/Vollkorn-Bold.ttf') format('opentype');
+}
+
 html {
     font-size: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Courier Bold,Courier New Bold,monospace;
 }
 
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 28px;
+    font-family: kreon_regular;
+    font-size: 36px;
     line-height: 1.0;
     color: #555555;
     background-color: #FFFFFF;
@@ -48,19 +83,15 @@ ul {
     margin: 0 0;
     padding: 0 0 0 3em;
     line-height: 1.5;
+    font-size: 48px;
 }
 
-ul2 {
-    margin: 0 0;
-    padding: 0 0 0 3em;
-    line-height: 0.8;
-    font-size: 24px;
-}
 
 img {
     vertical-align: middle;
     max-height: 600px;
-    margin: 0 auto 1em;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
@@ -112,18 +143,26 @@ blockquote {
     font-size: 80px;
     vertical-align: middle;
     text-align: center;
+    font-family: tienne_heavy;
+    color: #FFFF00;
 }
 
 .remark-slide-content h2 {
+    font-family: tienne_heavy;
     font-size: 60px;
     text-align: center;
     vertical-align: top;
+    font-weight: 1000;
+    color: #FFFF00;
 }
 
 .remark-slide-content h3 {
     font-size: 60px;
     vertical-align: bottom;
     text-align: center;
+    font-weight: 1000;
+    font-family: tienne_heavy;
+    color: #FFFF00;
 }
 
 .remark-slide-content h4 {
@@ -159,35 +198,15 @@ blockquote {
     }
 .remark-code-line-highlighted     { background-color: #373832; }
 
-.explain1 {
-    font-size: 20px;
-}
 
-.explain2 {
-    font-size: 24px;
-}
-
-.explain3 {
-    font-size: 36px;
-}
-
-/*      body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-      h1, h2, h3 {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 1000;
-        text-align: center;
-        color: #003F87
-      }*/
       .sigblock {
         position: absolute;
-        bottom: 3em;
-        right: 3em;
+        bottom: 2em;
+        right: 2em;
         text-align: right;
-        color: #000080;
-        background-color: #FFFFFF;
+        color: #FFFFFF;
         font-weight: 1000;
-        line-height: 0.5;
-        font-size: 18px;
+        font-size: 22px;
       }
       .leftlogo {
         position: absolute;
@@ -215,6 +234,19 @@ blockquote {
         padding-left: 0;
       }
       
+            /* Two-picture layout */
+      .left-pic {
+        width: 50%;
+        float: left;
+        vertical-align: middle;
+      }
+      
+      .right-pic {
+        width: 50%;
+        float: right;
+        vertical-align: middle;
+      }
+      
     </style>
   </head>
   <body>
@@ -222,7 +254,7 @@ blockquote {
     </script>
     <script>
       var slideshow = remark.create({
-  sourceUrl: 'explain_explained.md'
+  sourceUrl: 'for_great_stats.md'
 });
     </script>
   </body>
