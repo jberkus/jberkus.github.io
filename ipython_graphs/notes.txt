@@ -1,0 +1,27 @@
+I was like you
+    doing graphs by libreoffice
+    crashed all the time
+    incorporating new stats took hours
+    
+iPython to the rescue
+    what notebook is
+    how it works
+    advantage for interactive graphing
+    
+MatPlotLib and PyLab
+    what's the difference?
+    mix and match
+    bit of a mess
+
+Pulling from the database
+    psycopg2
+    converting to array
+
+Graph Examples
+    re-do the bar chart
+    some pie charts
+    stacked line graphs
+    heat map
+
+
+

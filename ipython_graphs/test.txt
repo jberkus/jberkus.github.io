@@ -1,0 +1,5 @@
+SELECT cpu::INT as cpu
+array_agg(measurement_time) as mtime, 
+array_agg(100 - peridle) as busy
+FROM cpu1
+WHERE cpu <> 'all'

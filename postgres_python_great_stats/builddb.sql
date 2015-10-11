@@ -108,7 +108,7 @@ from bikeparking
 group by location_name, bikeparking.address
 order by 3 desc;
 
-create temporary table rackthefts as
+create materialized view rackthefts as
     select location_name, bikeparking.address, count(*)/racks::float as thefts
     from bikeparking
         join crimedata
@@ -152,7 +152,7 @@ select location_name,
     std_compare(thefts, all_thefts) as risk_factor
 from racktheft_window
 )
-select risk.*, risk
+select risk_factors.*, risk
     from risk_factors
         join risk ON risk_factor::numeric <@ stdev
 order by risk_factor desc;
