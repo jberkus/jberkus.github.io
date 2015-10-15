@@ -8,7 +8,7 @@ Josh Berkus
 
 PostgreSQL Experts
 
-Postgres Open 2015
+SFPUG Oct. 2015
 ]
 
 .leftlogo[![pgx logo](pgx_dingbat.png)]
@@ -335,6 +335,59 @@ Nested Loop  (cost=1.79..21.52 rows=16 width=28)
 .
 ```
 
+---
+
+## first
+
+```
+
+
+
+
+
+
+
+ 
+              cost=0.00..1.51
+               
+.
+```
+
+---
+
+## second
+
+```
+
+
+        cost=0.28..2.50
+
+
+        cost=1.51..18.86 
+
+ 
+              cost=0.00..1.51 
+ 
+.
+```
+
+---
+
+## third
+
+```
+               cost=1.79..21.52
+
+        cost=0.28..2.50
+
+
+        cost=1.51..18.86 
+
+ 
+              cost=0.00..1.51 
+ 
+.
+```
 
 ---
 
@@ -724,12 +777,14 @@ more<br />jberkus:
 
 
 
+
 more<br />events:
 ]
 
 .right-column[
 www.pgexperts.com<br />
-www.databasesoup.com
+www.databasesoup.com<br />
+jberkus.github.io
 
 pgConfSV:<br/>
 Nov. 18, San Francisco
