@@ -337,6 +337,37 @@ Nested Loop  (cost=1.79..21.52 rows=16 width=28)
 
 ---
 
+## one line of EXPLAIN
+
+```
+Index Scan using patrons_pkey on patrons
+  (cost=0.28..2.50 rows=1 width=24) 
+  (actual time=0.015..0.015 rows=1 loops=1)
+  Index Cond: (card_no = 22827268400294::numeric)
+```
+---
+
+## operation
+
+```
+Index Scan using patrons_pkey on patrons
+
+
+.
+```
+---
+
+## cost
+
+```
+
+  (cost=0.28..2.50 rows=1 width=24) 
+
+.
+```
+
+---
+
 ## first
 
 ```
@@ -386,37 +417,6 @@ Nested Loop  (cost=1.79..21.52 rows=16 width=28)
  
               cost=0.00..1.51 
  
-.
-```
-
----
-
-## one line of EXPLAIN
-
-```
-Index Scan using patrons_pkey on patrons
-  (cost=0.28..2.50 rows=1 width=24) 
-  (actual time=0.015..0.015 rows=1 loops=1)
-  Index Cond: (card_no = 22827268400294::numeric)
-```
----
-
-## operation
-
-```
-Index Scan using patrons_pkey on patrons
-
-
-.
-```
----
-
-## cost
-
-```
-
-  (cost=0.28..2.50 rows=1 width=24) 
-
 .
 ```
 
