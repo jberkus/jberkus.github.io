@@ -1,0 +1,45 @@
+
+Docker > virtualenv
+
+virtualenv is great
+        run different versions
+        test environments
+        document requirements
+
+except
+        doesn't do different versions of python
+        doesn't do c libs
+        doesn't integrate well with scripts/tools
+                (startup script example)
+        accidentally clobbering paths
+        not very sharable
+                each person has to build
+                implicit requirements
+                
+what's docker?
+
+virtualenv | docker | vmware
+
+advantages over virtualenv
+        different versions of python
+        c libraries
+        scripts/tools just work
+        no worries about paths
+        simulate production
+        test in different envs.
+        sharing!
+                docker hub
+
+disadvantages
+        mac OS
+        sharing files is annoying
+        way more disk space
+                
+
+
+
+
+
+
+
+        
