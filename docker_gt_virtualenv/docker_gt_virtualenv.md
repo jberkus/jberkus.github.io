@@ -76,6 +76,12 @@ development->production
 
 ---
 
+## docker toolbox
+
+![docker toolbox](tbox.jpg)
+
+---
+
 ## docker -=
 
 ```
@@ -92,9 +98,9 @@ pipelinedb/pipelinedb   429.4 MB
 
 ## sharing files
 
-* use --volume
-* annoying
-* remember file reqs
+use --volume
+annoying, but
+you remember file reqs
 
 ---
 
@@ -105,6 +111,9 @@ FROM python/3.2
 
 RUN pip install flask
 
+RUN pip install -r \
+     /project/requirements
+
 CMD /bin/bash
 USER root
 ```
@@ -113,13 +122,13 @@ USER root
 
 ## practical tips
 
-1. start with python/ubuntu images
+1. create your own parent images
 
-2. create your own parent images
+2. have a common tree for volumes
 
-3. have a common tree for volumes
+3. several dockerfiles per project
 
-4. several dockerfiles per project
+4. use docker-compose for DBs
 
 ---
 
