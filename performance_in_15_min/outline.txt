@@ -1,0 +1,122 @@
+
+    Why database configuration is less than 20% of performance
+    The 14 settings most people need
+    Why connection pooling is essential
+    Avoiding bad hardware
+    DB performance for the public cloud
+    Stupid things your app does which kills performance
+
+
+
+Why database configuration is less than 20% of performance
+
+    go_faster = 1
+    The layer cake
+    Incremental improvement
+
+Connection Pooling
+
+    pgbouncer
+    transaction pooling
+    routing
+
+Use Recent PostgreSQL
+
+    'nuff said
+
+Avoiding Bad Hardware
+
+    Can't outperform it
+    IO is more important than you think
+        AWS notes
+    Get enough RAM
+    OS tips:
+        don't use windows/mac
+        avoid bad linux kernels
+        no ext3!
+
+More Cloud Stuff
+   
+    PAAS != Performance
+    Load balance to read slaves
+    check appserver distance
+
+Stupid Stuff Your App Does
+
+    Asking for data you already have
+    Polling the database with small/no wait
+    Join Loops
+    Idle transactions
+
+PostgreSQL.conf
+
+    shared_buffers
+    work_mem
+    effective_cache_size
+    wal_buffers
+    checkpoint_segments
+        checkpoint_completion_target
+    maintenance_work_mem = higher (256MB?)
+    AWS:
+        random_page_cost = 1.5
+
+
+do less
+    get less data
+        caching
+        polling
+        data you have
+        data you don't need
+        join loops
+    resource-hungry queries
+        slow queries
+        idle transactions
+
+adequate hardware
+
+    Can't outperform it
+    IO is more important than you think
+        AWS notes
+    Get enough RAM
+    OS tips:
+        don't use windows/mac
+        avoid bad linux kernels
+        no ext3!
+
+cloudy tips
+   
+    PAAS != Performance
+    check appserver distance
+
+scaling
+    
+    Connection Pooling
+
+        pgbouncer
+        transaction pooling
+
+    Load balancing
+        Load balance to read slaves
+            reportsSS
+        queue to separate DB
+
+postgresql.conf
+
+    shared_buffers
+    work_mem
+    effective_cache_size
+    wal_buffers
+    checkpoint_segments
+        checkpoint_completion_target
+    maintenance_work_mem = higher (256MB?)
+    stats_temp_directory
+    AWS:
+        random_page_cost = 1.5
+    
+
+
+
+
+        
+
+    
