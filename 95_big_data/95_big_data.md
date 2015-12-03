@@ -15,6 +15,15 @@ Indy Big Data 11/15
 
 ---
 
+## Me
+
+* PostgreSQL Core Team
+* DBA since 1995
+* Helped create Greenplum
+* Involved with PipelineDB and CitusData
+
+---
+
 ![elephant with car](elephant_car.png)
 
 ---
@@ -31,7 +40,11 @@ Indy Big Data 11/15
 
 ## Postgres Data Sizing
 
-1 GB to 10 TB
+Comfort Zone: 1 GB to 10 TB
+
+Possible: 10 TB to 100 TB
+
+With Extensions: ???
 
 ---
 
@@ -371,6 +384,16 @@ where filler like '%a%';
          Filter: (filler ~~ '%a%'::text)
 
 ```
+
+---
+
+# cstore & pg_shard
+
+extensions from CitusData
+
+cstore: column-store for Postgres
+
+pg_shard: automated DW sharding 
 
 ---
 
