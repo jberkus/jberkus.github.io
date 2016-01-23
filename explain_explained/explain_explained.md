@@ -6,12 +6,12 @@ background-image: url(explain_screenshot2.png)
 .sigblock[
 Josh Berkus
 
-PostgreSQL Experts
+Red Hat OSAS
 
-SFPUG Oct. 2015
+SCALE 2016
 ]
 
-.leftlogo[![pgx logo](pgx_dingbat.png)]
+.leftlogo[![redhat logo](red_hat_dingbat.png)]
 
 ---
 
@@ -601,6 +601,16 @@ background-image: url(explain_screenshot2.png)
 
 ---
 
+# other GUIs and helpers
+
+* pgAdmin Visual Explain<br />
+  part of pgAdmin GUI
+* RedHat Visual Explain<br />
+  now part of EDB Developer Studio
+* irc.freenode.net, #postgresql
+
+---
+
 # needs an index
 
 ```
@@ -778,21 +788,20 @@ more<br />jberkus:
 
 
 
-more<br />events:
+more resources:
 ]
 
 .right-column[
-www.pgexperts.com<br />
+@fuzzychef<br />
 www.databasesoup.com<br />
 jberkus.github.io
 
-pgConfSV:<br/>
-Nov. 18, San Francisco
-
-Jan. 21, Los Angeles
+explain.depesz.com<br />
+https://wiki.postgresql.org/wiki/Using_EXPLAIN<br />
+www.pgadmin.org<br />
 ]
 
-.leftlogo[![pgx logo](pgx_dingbat.png)]
+.leftlogo[![rh logo](red_hat_dingbat.png)]
 
 .rightlogo[![cc by sa](by-sa.png)]
 
