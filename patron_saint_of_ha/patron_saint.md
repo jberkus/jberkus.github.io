@@ -352,8 +352,8 @@ _fork us on Github!_
   <br />github.com/zalando/patroni
 * Spilo Project:
   <br />github.com/zalando/spilo
-* Compose governor:
-  <br />github.com/compose/governor
+* patroni-compose test env:
+  <br />github.com/pgexperts/patroni-compose
 
 ---
 
