@@ -6,12 +6,12 @@ background-image: url(big_jumbo.png)
 .sigblock[
 Josh Berkus
 
-PostgreSQL Experts
+Red Hat OSAS
 
-Indy Big Data 11/15
+PDXPUG 3/16
 ]
 
-.leftlogo[![pgx logo](pgx_dingbat.png)]
+.leftlogo[![pgx logo](red_hat_dingbat.png)]
 
 ---
 
@@ -162,7 +162,7 @@ background-image: url(big_postgres.png)
 Get subtotals and totals with detail in one query.
 
 ```
-    SELECT country, city, count(*) 
+    SELECT country, city, count(*)
     FROM lwn_subscribers
     GROUP BY ROLLUP ( country, city );
 ```
@@ -174,7 +174,7 @@ Get subtotals and totals with detail in one query.
 Get and explosion of all possible summaries for use with OLAP tools.
 
 ```
-    SELECT country, level, count(*) 
+    SELECT country, level, count(*)
     FROM lwn_subscribers
     GROUP BY CUBE ( country, level );
 ```
@@ -188,7 +188,7 @@ Superset/programmable version of both ROLLUP and CUBE
 ```
     SELECT city, level, count(*)
     FROM lwn_subscribers
-    GROUP BY GROUPING SETS 
+    GROUP BY GROUPING SETS
        ((city, level),(level),());
 ```
 
@@ -242,10 +242,10 @@ Foreign Data Wrapper
 Lets PostgreSQL access external data like it was a local table.
 
 ```sql
-CREATE FOREIGN TABLE myredishash 
+CREATE FOREIGN TABLE myredishash
   (key text, val text[])
   SERVER redis_server
-  OPTIONS (database '0', tabletype 'hash', 
+  OPTIONS (database '0', tabletype 'hash',
     tablekeyprefix 'mytable:');
 
 INSERT INTO myredishash (key, val)
@@ -290,16 +290,16 @@ Copy an entire target database in one command.
 Data federation using PostgreSQL partitioning.
 
 ```sql
-create foreign table users_shard_1 () 
-INHERITS (users) server shard_1 
+create foreign table users_shard_1 ()
+INHERITS (users) server shard_1
 options ( table_name 'users' );
-create foreign table users_shard_2 () 
-INHERITS (users) server shard_2 
+create foreign table users_shard_2 ()
+INHERITS (users) server shard_2
 options ( table_name 'users' );
-create foreign table users_shard_3 () 
-INHERITS (users) server shard_3 
+create foreign table users_shard_3 ()
+INHERITS (users) server shard_3
 options ( table_name 'users' );
-``` 
+```
 
 ---
 
@@ -356,7 +356,7 @@ Less writing == faster load
 Get a "quick look" at data in a big table.
 
 ```
-SELECT * FROM user_profiles 
+SELECT * FROM user_profiles
 TABLESAMPLE BERNOULLI ( 0.001 );
 ```
 
@@ -374,7 +374,7 @@ Finally, parallel query for Postgres
 
 ```sql
 set max_parallel_degree = 4;
-select * from pgbench_accounts 
+select * from pgbench_accounts
 where filler like '%a%';
                  QUERY PLAN                 
 ---------------------------------------------
@@ -387,13 +387,13 @@ where filler like '%a%';
 
 ---
 
-# cstore & pg_shard
+## cstore & pg_shard
 
 extensions from CitusData
 
 cstore: column-store for Postgres
 
-pg_shard: automated DW sharding 
+pg_shard: automated DW sharding
 
 ---
 
@@ -403,7 +403,7 @@ PipelineDB: August 2015
 
 Greenplum: November 2015
 
-CitusDB: January 2016
+CitusDB: March? 2016
 
 ---
 
@@ -419,18 +419,17 @@ more<br />events:
 ]
 
 .right-column[
-www.pgexperts.com<br />
+www.projectatomic.io<br />
 www.databasesoup.com<br />
 jberkus.github.io
 
-pgDay LA:<br />
-Jan. 21, Los Angeles
-
 pgCon:<br />
 May 21, Ottawa
+
+pgConfSV<br />
+Nov. 16, San Francisco
 ]
 
-.leftlogo[![pgx logo](pgx_dingbat.png)]
+.leftlogo[![pgx logo](red_hat_dingbat.png)]
 
 .rightlogo[![cc by sa](by-sa.png)]
-
