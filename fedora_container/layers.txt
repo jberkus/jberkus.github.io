@@ -1,0 +1,43 @@
+version 1:
+
+* Dockerfile for Postgres
+
+version 2:
+
+* Postgres Dockerfile
+  build layers consolidated
+  cache cleaned up
+* added static UID
+
+version 3:
+
+* added ENV and Volumes
+* redirected logging to stdout
+* add entrypoint script
+
+version 5:
+
+* add FLI labels
+
+version 6:
+
+* add atomic labels
+
+version 7:
+
+* add OpenShift labels, UID
+
+version 8:
+
+* everything
+
+version 9:
+
+* add ghost app
+* add Nulecule file
+
+https://download.postgresql.org/pub/repos/yum/9.5/fedora/fedora-24-x86_64/pgdg-fedora95-9.5-3.noarch.rpm
+
+RUN /usr/bin/initdb -D /var/lib/pgsql/data && \
+  /etc/ssl/certs/make-dummy-cert /var/lib/pgsql/data/server.crt && \
+  ln -s /var/lib/pgsql/data/server.crt /var/lib/pgsql/data/server.key

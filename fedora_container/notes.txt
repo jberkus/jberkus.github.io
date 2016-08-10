@@ -1,0 +1,35 @@
+workshop:
+
+containers vs. apps
+
+building containers
+* base images and layered images
+* how building works
+* a basic dockerfile
+* building example
+* refinements
+  * limiting layers
+  * volumes
+  * CMD vs. Entrypoint
+  * cleaning up cache
+* adding more to the dockerfile
+  * Fedora labels
+  * atomic support
+* let's build an image
+
+Atomic
+* using the atomic CLI with images
+* using AtomicApp for multi-container applications
+
+Registries
+* docker hub
+* documenting good images
+* versions
+
+Other Targets
+* Fedora Layered Images
+  * requirements
+  * examples
+* OpenShift
+  * requirements
+  * examples?

@@ -1,0 +1,35 @@
+Bots Not Cattle
+
+Cattle not Pets
+- Explain
+
+The problem with Cattle
+  - dumb
+  - stampedes
+  - central management
+
+RoboRally
+  - explain game
+  - concept of programming
+  - intelligent bots
+
+IFTTT
+  - reacting to events
+
+Rules of Bots
+  - know own state
+  - be self-configuring
+  - react to events (state machine)
+    - what's a state machine?
+    - state machine examples
+
+Example: Patroni
+
+Projects:
+  * patroni
+  * flynn
+  * habitat
+
+Boticizing
+
+Web application

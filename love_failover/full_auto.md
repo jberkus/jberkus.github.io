@@ -524,8 +524,10 @@ _See micro-cluster at RH Summit, Dockercon_
 &nbsp;
 ]
 
-
-
 .leftlogo[![rh logo](red_hat_dingbat.png)]
 
 .rightlogo[![cc by sa](by-sa.png)]
+
+---
+
+#### Come to pgConf Silicon Valley!<br />www.pgconfsv.com<br />November 14-16
