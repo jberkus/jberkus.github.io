@@ -1,0 +1,32 @@
+- petset is now statefulset
+- the postgres problem
+  - node identity
+    - had to use ip addresses
+  - connection management
+    - had to use proxy
+    - problems with IP assignment
+  - master
+    - had to use proxy
+    - headless services
+  - storage persistence
+    - couldn't use standard PV
+    - replicas shared storage
+      - big no-no for databases
+  - sharding
+    - needed to identify shards, but keep them as a set
+- statefulset solutions
+
+
+
+- still WIP
+  - affinity/anti-affinity
+    - no 2 databases
+    - not with same hard/soft
+  - IO resource allocations
+    - IOPS? Throughput?
+  - sharding
+    - shard duplicates
+      - currently working around by odds/evens
+    - shard affinity
+  - Replication Slot Woes
+    - node replacement
