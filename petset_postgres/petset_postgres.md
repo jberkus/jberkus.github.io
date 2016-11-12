@@ -272,6 +272,7 @@ Big == takes too long to copy
 
 ## Reclaim Policies (???)
 
+* scaling down should discard PV
 * don't want to reuse corrupt data
 * might not want old data
 * would be nice to use HostPath
