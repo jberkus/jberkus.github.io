@@ -40,6 +40,10 @@ github.com/jberkus/atomicdb
 
 ---
 
+![project atomic](project_atomic.png)
+
+---
+
 .left-column[
 
 ![kubernetes logo](kube.png)
@@ -113,6 +117,10 @@ This is your _future_ infrastructure.
 
 ---
 
+![micro cluster](micro-cluster.jpg)
+
+---
+
 ## Prototypeishness
 
 * still working on some of the alpha features
@@ -174,6 +182,7 @@ ecosystem.
 
 ## More Clusters!
 
+* New Governor
 * Postgres Pro MM Clustering
 * BDR (with Federation?)
 * PostgresXL
@@ -187,6 +196,12 @@ ecosystem.
 * Node Affinity (1.5)
 * Fix issues (PVs, etc.)
 * Vault plugin
+
+---
+
+#### Pull Requests Welcome!
+
+github.com/jberkus/atomicdb
 
 ---
 
