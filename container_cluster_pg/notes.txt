@@ -1,0 +1,78 @@
+# Containerized Clustered Postgres
+
+A long strange journey
+- yak-shaving
+- wanted to automate HA postgres
+- containers solved a number of issues
+- statefulness gulf
+- building the foundation
+- got involved with PetSet
+
+Containerize Vs. Not?
+- TL;DR: this is an "in 6 months" solution
+- why to containerize
+  - easy installation
+  - encapsulation of service
+  - force good DBA habits
+  - orchestration
+  - easy testing
+- benefits of orchestration
+  - manage multiple Postgres instances
+  - auto-vivification
+  - managing connections and pools
+  - HA/DR
+  - integrate with rest of stack
+  - self-service for developers
+  - use GCE
+- drawbacks
+  - alphas
+    - waiting for fixes, features
+  - extra setup (unless you use GCE)
+  - new ways of admin/config/monitoring
+
+The Prototypes
+- why they're only prototypes
+- containers
+  - autopilot pattern
+  - container considerations
+    - log to stdout/err
+    - install bootstrap & pvs
+      - required parts:
+        - config
+        - hba
+        - initial users & pwds
+  - patroni container
+    - guided tour
+  - citusdb
+    - guided tour
+- kubernetes config
+  - explanation of statefulset parts
+  - patroni
+    - etcd requirement
+    - demo of deployment
+    - PV vs. emphemeral
+  - citusdb
+    - demo of deployment
+    - using citusdb
+
+Productionizing
+- list of needed items:
+  - PVs
+  - Vault
+  - sidecar containers
+    - backup
+    - pooling
+    - etcd
+    - db management
+    - pgadmin
+- features on the waitlist
+  - union configmap
+  - Vault plugin
+  - federated StatefulSets
+  - issues with PVs
+  - affinity
+- more containerizing
+  - Postgres Pro MM-Sync
+  - BDR?
+
+Q?

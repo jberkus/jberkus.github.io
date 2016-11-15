@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Containerized Clustered Postgres</title>
+    <meta charset="utf-8">
+        <style type="text/css">
+/* Basic theme for remark slides */
+
+html {
+    font-size: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1.0;
+    color: #555555;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+a {
+    color: #00989e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover, a:focus {
+    color: #00989e;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #00989e;
+    outline-offset: 0;
+    background-color: #00989e;
+    color: #FFF;
+    text-decoration: none;
+}
+
+ol {
+    padding: 0 0 0 3em;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 40px;
+}
+
+ul {
+    margin: 0 0;
+    padding: 0 0 0 3em;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 40px;
+}
+
+ul2 {
+    margin: 0 0;
+    padding: 0 0 0 3em;
+    line-height: 0.8;
+    font-size: 24px;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 600px;
+    max-width: 800px;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+hr {
+    height: 0;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 1em 0 0.5em;
+}
+
+b,
+strong {
+    font-weight: 1000;
+    color: #FFFF00;
+}
+
+blockquote {
+    border-left: 5px solid #cccccc;
+    padding-left: 1em;
+    margin: 1em -1em;
+    font-style: italic;
+    color: #999999;
+}
+
+.remark-slide-number {
+    display: none;
+}
+
+.remark-slide {
+    display: table;
+}
+
+.remark-slide-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1em 2em;
+    font-size: 48px;
+    background: #272822;
+    color: #FFFFFF;
+}
+
+.remark-slide-content h1 {
+    font-size: 80px;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFF00
+}
+
+.remark-slide-content h2 {
+    font-size: 72px;
+    text-align: center;
+    vertical-align: top;
+    color: #FFFF00;
+}
+
+.remark-slide-content h3 {
+    font-size: 60px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.remark-slide-content h4 {
+    font-size: 96px;
+    color: #FFFF00;
+    vertical-align: top;
+    text-align: center;
+    font-weight: 2000;
+    text-shadow: 7px 7px 4px #000;
+}
+
+.remark-slide-content h5 {
+    font-size: 66px;
+    text-align: right;
+    vertical-align: top;
+    color: #FFFF00;
+}
+
+.remark-slide-content h6 {
+    font-size: 24px;
+    color: #00989e;
+}
+
+.remark-slide-content > :first-child {
+    margin-top: 0;
+}
+
+.remark-slide-content > :last-child {
+    margin-bottom: 0;
+}
+
+.remark-code, .remark-inline-code {
+    font-family: 'Monospace';
+    font-size: 40px;
+    text-align: left
+    }
+.remark-code-line-highlighted     { background-color: #373832; }
+
+.explain1 {
+    font-size: 20px;
+}
+
+.explain2 {
+    font-size: 24px;
+}
+
+.explain3 {
+    font-size: 36px;
+}
+
+/*      body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      h1, h2, h3 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 1000;
+        text-align: center;
+        color: #003F87
+      }*/
+      .sigblock {
+        position: absolute;
+        bottom: 3em;
+        right: 3em;
+        text-align: right;
+        color: #FFFFFF;
+        font-weight: 1000;
+        font-size: 18px;
+      }
+      .leftlogo {
+        position: absolute;
+        bottom: 0.5em;
+        left: 1em;
+      }
+      .rightlogo {
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+      }
+
+
+      /* Two-column layout 1*/
+      .left-column {
+        width: 50%;
+        float: left;
+        padding-top: 50;
+        text-align: left;
+      }
+
+      .right-column {
+        width: 50%;
+        float: right;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: right;
+      }
+
+            /* Two-column layout 2*/
+      .left-column-narrow {
+        width: 35%;
+        float: left;
+        padding-top: 50;
+        text-align: left;
+      }
+
+      .right-column-wide {
+        width: 65%;
+        float: right;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+  sourceUrl: 'container_cluster.md'
+});
+    </script>
+  </body>
+</html>
