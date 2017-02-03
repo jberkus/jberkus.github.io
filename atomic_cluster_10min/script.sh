@@ -1,5 +1,5 @@
-# flip to browser, show AWS nodes
 
+# flip to browser, show AWS nodes
 # flip back to terminal
 
 cat /etc/yum.repos.d/jasonbrooks-kube-release-epel-7.repo
@@ -24,7 +24,7 @@ kubectl get pods --all-namespaces
 
 # switch to another node
 
-rpm-ostree pkg-add --reboot kubelet kubeadm kubectl kubernetes-cni
+rpm-ostree pkg-add --reboot kubelet kubeadm kubernetes-cni
 
 systemctl enable kubelet --now
 

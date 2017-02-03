@@ -8,7 +8,7 @@ Josh Berkus
 
 Red Hat OSAS
 
-OSBridge 2016
+FOSDEM 2017
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]
@@ -54,12 +54,37 @@ OSBridge 2016
 
 ---
 
+## Microservice Django
+
+1. PostgreSQL containers (w/ replicas)
+2. pgbouncer container
+3. Storage containers (Gluster)
+4. Django containers
+5. Webserver container (nginx)
+6. Reverse proxy container
+7. DB backup container
+8. CI container
+
+---
+
+![microservices ad nauseum](microservice-hell.png)
+
+---
+
+![monolith](monolith.png)
+
+---
+
 ## Microservice Coordination
 
-* coordinate multiple containers
-* "utility" containers (storage etc.)
+* BASH?
+* Puppet/Ansible?
+* Custom Python/Ruby code?
+* Typing real fast?
 
-Bash scripts?  Puppet/Chef/Ansible?
+---
+
+![containers together](containers-together.png)
 
 ---
 
@@ -114,7 +139,8 @@ Bash scripts?  Puppet/Chef/Ansible?
 ## sharing: services
 
 * with other pods in the cluster (DB)
-* with external networks (web)
+* with external networks (web) <br />
+  (also see Ingress)
 
 ---
 
@@ -124,8 +150,10 @@ Bash scripts?  Puppet/Chef/Ansible?
 
 ## configuration
 
-* help defining service at runtime
-* pass configuration vars to containers
+* dev vs. prod
+* multi-tenant apps
+* passwords
+* performance settings
 
 ---
 
@@ -133,7 +161,7 @@ Bash scripts?  Puppet/Chef/Ansible?
 
 * ENV
 * ConfigMap
-* Secrets (old)
+* Secrets
 
 ---
 
@@ -148,13 +176,55 @@ Bash scripts?  Puppet/Chef/Ansible?
 
 ---
 
+## beyond volumes: StatefulSet
+
+* persistent pod identity
+* pod addressability
+* associate storage with specific pods
+
+(see my preso State That's What's Happening)
+
+---
+
+#### Implementation Details
+
+---
+
 ## how does all this work?
 
 ![kube architecture diagram](Kubernetes_components.jpg)
 
 ---
 
-## what kube does
+## etcd
+
+* distributed consensus store
+* holds metadata
+* supports HA for Kube itself
+
+---
+
+## create & edit objects
+
+* write direct to etcd
+* kubectl one-liners
+* kubectl + yaml files
+* API + drivers (e.g. pyKube)
+
+---
+
+## other pieces (microservices)
+
+* apiserver: provides API
+* scheduler: places pods
+* controller: starts/stops pods
+* proxy/network: lets pods connect
+* discovery: find pods by name
+* dns: lets outside connect
+
+---
+
+## recap: what Kube does
 
 * grouping: pods
 * deployment: nodes
@@ -162,6 +232,12 @@ Bash scripts?  Puppet/Chef/Ansible?
 * sharing: services
 * configuration
 * storage: volumes
+
+---
+
+## recap: what Kube does
+
+allows you to turn a set of containers into an application
 
 ---
 
@@ -182,9 +258,8 @@ www.projectatomic.io<br />
 jberkus.github.io
 
 KubeCon<br />
-Nov 7, Seattle
+March 26, Berlin
 
-Cloud Native PDX<br />Meetup
 ]
 
 .leftlogo[![pgx logo](red_hat_dingbat.png)]

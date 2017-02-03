@@ -7,7 +7,7 @@ Josh Berkus
 
 Red Hat OSAS
 
-pgConfSV 2016
+pgDay EU 2017
 ]
 
 .leftlogo[![redhat logo](red_hat_dingbat.png)]
@@ -40,7 +40,11 @@ github.com/jberkus/atomicdb
 
 ---
 
-![project atomic](project_atomic.png)
+![kubernetes logo](kube.png)
+
+---
+
+![project atomic](project_atomic_2.png)
 
 ---
 
@@ -58,10 +62,10 @@ github.com/jberkus/atomicdb
 
 ---
 
-## PetSet / StatefulSet
+## StatefulSet
 
 Kubernetes API for stateful applications,
-introduced in 1.4 (still alpha)
+introduced in 1.4 (still beta) (was PetSet)
 
 * storage
 * routing
@@ -95,6 +99,17 @@ introduced in 1.4 (still alpha)
 
 ---
 
+## Pro-Orchestration
+
+easiest way to test the new clustered versions of PostgreSQL
+
+* CitusDB
+* MMSync
+* BDR
+* More
+
+---
+
 _manage PostgreSQL<br />as a cluster ecosystem,<br />instead of as<br />a bunch of servers_
 
 ---
@@ -125,7 +140,7 @@ This is your _future_ infrastructure.
 
 * still working on some of the alpha features
 * some productions examples exist already (Spilo)
-* others in ~~ 6 months
+* others this year
 
 ---
 
@@ -182,8 +197,9 @@ ecosystem.
 
 ## More Clusters!
 
-* New Governor
+* Patroni-RAFT
 * Postgres Pro MM Clustering
+* New Governor
 * BDR (with Federation?)
 * PostgresXL
 
@@ -193,7 +209,7 @@ ecosystem.
 
 * Union ConfigMap
 * Federated StatefulSets
-* Node Affinity (1.5)
+* Node Anti-Affinity (1.6?)
 * Fix issues (PVs, etc.)
 * Vault plugin
 
@@ -212,7 +228,7 @@ github.com/jberkus/atomicdb
 * Simplified Configuration Scripts:
   <br />github.com/jberkus/atomicdb/
 * Crunchy Data Containers:
-  <br />
+  <br />github.com/CrunchyData/crunchy-containers
 
 ---
 
