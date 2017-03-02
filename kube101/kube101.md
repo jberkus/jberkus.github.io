@@ -1,4 +1,3 @@
-
 #### Kubernetes 101
 
 ![kubernetes logo](kube.png)
@@ -8,10 +7,16 @@ Josh Berkus
 
 Red Hat OSAS
 
-FOSDEM 2017
+SCALE 15x
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]
+
+---
+
+#### Thanks
+
+Jerome Petrazzoni, Dusty Mabe, Mike Dorsey, Carter Morgan, SCALE 15x Crew!
 
 ---
 
@@ -71,7 +76,7 @@ FOSDEM 2017
 
 ---
 
-![monolith](monolith.png)
+![monolith](bring_back_monolith.jpg)
 
 ---
 
@@ -84,7 +89,7 @@ FOSDEM 2017
 
 ---
 
-![containers together](containers-together.png)
+![containers together](containers_together.jpg)
 
 ---
 
@@ -121,7 +126,7 @@ FOSDEM 2017
 
 ## scaling out: replicas
 
-![replicas of postgres](failover_3.png)
+![replicas of nginx](stateless_app.png)
 
 ---
 
@@ -139,8 +144,15 @@ FOSDEM 2017
 ## sharing: services
 
 * with other pods in the cluster (DB)
-* with external networks (web) <br />
-  (also see Ingress)
+* with external networks (web)
+
+---
+
+## sharing: ingress
+
+* URL "path" access to services
+* requires controller & DNS
+* supports TLS/HTTPS
 
 ---
 
@@ -182,7 +194,28 @@ FOSDEM 2017
 * pod addressability
 * associate storage with specific pods
 
-(see my preso State That's What's Happening)
+(see my presos tommorrow & sunday)
+
+---
+
+#### How do I maintain my apps?
+
+---
+
+## maintenance with Deployments
+
+* represents an "instance" of an app
+* supports rolling updates
+* also: Canary, Blue/Green, etc.
+
+---
+
+## Deployment pattern
+
+1. create initial deployment with service + replicas
+2. edit deployment at update time
+3. roll out new version
+4. roll back on fail
 
 ---
 
@@ -232,6 +265,16 @@ FOSDEM 2017
 * sharing: services
 * configuration
 * storage: volumes
+* maintenance: deployments
+
+---
+
+## other Kube things
+
+* federation (multi-DC)
+* Helm for apps
+* operators
+* alternate runtimes (rkt, cri-o)
 
 ---
 
@@ -256,6 +299,9 @@ more<br />events:
 www.projectatomic.io<br />
 @fuzzychef<br />
 jberkus.github.io
+
+Friday: PG + Kubernetes<br />
+Sunday: StatefulSets
 
 KubeCon<br />
 March 26, Berlin

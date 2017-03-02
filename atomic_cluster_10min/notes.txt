@@ -1,0 +1,20 @@
+10 minutes to Atomic Cluster
+
+First Demo
+  1. Layer kubeadm
+  2. Kubernetes init
+  3. Ansible
+  4. Deploy example application
+
+More explanation
+  0. CentOS Dev Stream
+  1. Layering
+  2. Ports
+  3. Container setup
+  4. Manifests
+
+Current development status
+  * beta in 1.6
+  * cloud config pass-through
+  * HA config (multi-etcd)
+  * Fedora-based containers

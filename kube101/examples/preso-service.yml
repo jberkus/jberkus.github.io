@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kube101-preso
+  labels:
+    app: kube-preso
+spec:
+  type: NodePort
+  ports:
+    - port: 8000
+      nodePort: 31901
+  selector:
+    app: kube-preso

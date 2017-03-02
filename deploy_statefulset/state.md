@@ -1,20 +1,17 @@
 
-![state, it's what's happening](title_screen.png)
+## Deploying with StatefulSet
 
+![deploying with statefulset](stateful_app_sm.png)
 
 .sigblock[
 Josh Berkus
 
 Red Hat OSAS
 
-SCALE 15x 2017
+Devconf 2017
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]
-
----
-
-![projectatomic logo](project_atomic_2.png)
 
 ---
 
@@ -53,11 +50,11 @@ github.com/jberkus/atomicdb
 
 ---
 
-#### backing service
+#### backing store
 
 ---
 
-#### Amazon RDS
+#### AWS RDS
 
 ---
 
@@ -73,7 +70,7 @@ github.com/jberkus/atomicdb
 
 ---
 
-![wikipedia no data](wikipedia.png)
+![wikipedia blank page](wikipedia.png)
 
 ---
 
@@ -83,8 +80,19 @@ github.com/jberkus/atomicdb
 
 ## What is State?
 
+?
+?
+
+---
+
+## What is State?
+
 the difference between
 code and running applications
+
+---
+
+#### No truly _stateless_ applications
 
 ---
 
@@ -108,7 +116,7 @@ code and running applications
 
 ---
 
-## Four Stateful Qualities
+## Four Types of State
 
 1. Storage
 2.   
@@ -117,7 +125,7 @@ code and running applications
 
 ---
 
-## Four Stateful Qualities
+## Four Types of State
 
 1. Storage
 2. Node Identity
@@ -126,26 +134,26 @@ code and running applications
 
 ---
 
-### 1. Storage
+## 1. Storage
 
----
-
-## Storage Requirements
+requirements:
 
 * goes with the container
 * exclusive write access
 
 ---
 
-## Storage Solutions
+## 1. Storage
 
-1. automated dir naming
+Solutions:
+
+* automated dir naming
   <br />in app initialization
-2. automated data migration
-    <br />Flocker Volumes
-3. network storage
+* network storage
   <br />(allocated per container)
   <br />Kube StatefulSet PVT
+* automated data migration
+  <br />Flocker Volumes
 
 ---
 
@@ -181,25 +189,18 @@ pgdata-patroni-0   Bound   25Gi       59m
 pgdata-patroni-1   Bound   25Gi       59m
 pgdata-patroni-2   Bound   25Gi       59m
 ```
----
-
-## StatefulSet PVT Limitations
-
-* no local storage (yet)
-* recovery logic
-* garbage collection
 
 ---
 
-#### 2. Identity
+#### Identity
 
 ---
 
-![multiple man](multiple_man.jpg)
+![stateless app](stateless_app.png)
 
 ---
 
-![spiderman](spiders_man.png)
+![stateful app](stateful_app.png)
 
 ---
 
@@ -241,29 +242,7 @@ patroni-4       1/1       Running   0          2d
 
 ---
 
-## StatefulSet Identity
-
-* pods start with -0 and increment
-* pods start in order
-* routable as pod-0.service.svc.cluster.local
-
----
-
-## StatefulSet WIP
-
-* replacement
-* promotion
-* namespacing
-* shadow nodes
-* federation
-
----
-
-### 3. Cluster Role
-
----
-
-## Cluster Role
+## 3. Cluster Role
 
 what is my job in the cluster?
 
@@ -274,7 +253,7 @@ what is my job in the cluster?
 
 ---
 
-## Cluster Role
+## 3. Cluster Role
 
 * can (does) change
 * sometimes exclusive
@@ -282,7 +261,7 @@ what is my job in the cluster?
 
 ---
 
-## Cluster Role
+## 3. Cluster Role
 
 DCS to the rescue!
 
@@ -294,38 +273,14 @@ DCS to the rescue!
 
 ## DCS?
 
-distributed configuration store
+distributed consensus store
 
 * etcd
 * consul
 * zookeeper
-* embedded RAFT
+* python-raft
 
 consistent, fault-tolerant
-
----
-
-## DCS vs. Embedded
-
-DCS: scale, manage separately.  Proven software.
-
-Embedded: Just One Image. Fewer cluster fail scenarios.
-
----
-
-## Bot/Autopilot
-
-![bot working](bot_traffic.jpg)
-
----
-
-## Bot Code
-
-Code in the application container which automatically manages its Cluster Role using a simple state machine and access to a consensus store.
-
-* automatic
-* autonomous
-* correct
 
 ---
 
@@ -359,22 +314,7 @@ patroni-2   1/1       Running      master
 
 ---
 
-## Bot/DCS Issues
-
-* switching asynchronous
-* inconsistency
-* failover data loss
-* cluster failure
-* MOAR TESTING!
-
----
-
-### 4. Session State
-
----
-
-
-## Session State
+## 4. Session State
 
 not everything is a REST request
 
@@ -385,38 +325,23 @@ not everything is a REST request
 
 ---
 
-## Session State
+## 4. Session State
 
 solutions?
 
 * discovery DNS
-  <br />... don't follow failover
+  <br />but ... need IP migration cost
 * smart proxies
-  <br />... not done yet
+  <br />but ... need reconnect logic
 
 ---
 
-## Discovery DNS
+## Session State
 
 ```
 psql -h pgwrite.patroni.default.svc.cluster.local
 psql -h pgread.patroni.default.svc.cluster.local
 ```
-
----
-
-## Session State Future
-
-Develop smart proxies which read Cluster Role events and automatically reconfigure and fail over connections according to an autonomous rules system.
-
----
-
-## Stateful Solutions
-
-1. Storage: StatefulSet PVT (70%)
-2. Identity: StatefulSet (90%)
-3. Cluster Role: DCS + Bot (70%)
-4. Session: Discovery DNS (50%)
 
 ---
 
@@ -436,11 +361,11 @@ www.projectatomic.io<br />
 @fuzzychef<br />
 jberkus.github.io
 
-Kubecon EU<br />
-March 27, Berlin
+FOSDEM<br />
+Feb. 4, Brussels
 
-Cloud Native PDX
-<br />Meetup
+KubeCon EU
+<br />Mar. 28, Berlin
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]

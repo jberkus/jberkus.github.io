@@ -1,6 +1,6 @@
 FROM fedora:24
 
-MAINTAINER josh@berkus.org
+MAINTAINER josh@agliodbs.com
 
 RUN dnf -y install python
 

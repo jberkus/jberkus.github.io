@@ -1,0 +1,86 @@
+# state: it's whats happening
+
+- the gulf of statefulness
+  - stateless
+  - stateful (databases etc.)
+  - metaphor?  justice league?
+
+- what is state
+  - difference between code and running apps
+  - cost of switching
+    - opportunity cost
+  - all applications have some state
+  - lambda
+  - transactional db
+
+- the problems of state
+  - CI/CD
+    - reversability
+    - dev vs. production
+    - ops requirements
+
+- the four heroes of state
+  - storage
+    - ant-man
+  - sessions
+    - prof x (scarlet witch?)
+  - identity
+    - spiderman
+  - affinity
+    - absorbing man
+
+- storage
+  - how people usually think of state
+  - elastic in size, but agile? ant-man
+  - not just disk storage, also memory
+    - caches not free
+  - usually solved by shell game
+    - push it off on someone else
+  - solving the storage problem
+    - network storage?
+    - data migration
+    - kube petset pv
+
+- sessions
+  - scarlet witch hypnotism?
+  - examples
+    - downloads
+    - db transactions
+    - authenticated sessions (auth server)
+  - solving sessions
+    - scheduling
+    - higher cost for moving services
+      breaking connections
+
+- identity
+  - spiderman vs. robin
+    - spider-ham, spider gwen
+  - identity says "this instance"
+    - also needs to be predictable
+  - important for applications which need to "peer"
+  - or special nodes
+  - petset identity
+
+- cluster state
+  - what is my role in the cluster?
+  - this can change (failover)
+  - dcses to the rescue!
+
+- affinity
+  - absorbing man
+  - must be located with what
+  - also anti-affinity
+  - makes scheduling a pain, moving more so
+  - examples
+    - db anti-affinity
+    - storage affinity
+  - solutions
+    - affinity rules
+    - custom schedulers
+    - resource cost
+
+- the future of state
+  - more petset
+  - DIY abstraction layers
+    - FS etc.
+  - re-write schedulers

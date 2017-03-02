@@ -7,7 +7,7 @@ Josh Berkus
 
 Red Hat OSAS
 
-pgDay EU 2017
+SCALE 15x 2017
 ]
 
 .leftlogo[![redhat logo](red_hat_dingbat.png)]

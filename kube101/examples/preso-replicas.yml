@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kube101-preso
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: kube-preso
+    spec:
+      containers:
+        - name: jberkus-kube-preso
+          image: jberkus/kube101:0.3
+          ports:
+            - containerPort: 8000
