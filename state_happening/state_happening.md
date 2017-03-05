@@ -53,11 +53,11 @@ github.com/jberkus/atomicdb
 
 ---
 
-#### backing service
+#### "backing service"
 
 ---
 
-#### Amazon RDS
+![amazon RDS logo](aws_rds.png)
 
 ---
 
@@ -126,6 +126,8 @@ code and running applications
 
 ---
 
+![giant man](photo_giant-man.gif)
+
 ### 1. Storage
 
 ---
@@ -191,7 +193,9 @@ pgdata-patroni-2   Bound   25Gi       59m
 
 ---
 
-#### 2. Identity
+![batman revealed](secret_identity.jpg)
+
+### 2. Identity
 
 ---
 
@@ -259,6 +263,8 @@ patroni-4       1/1       Running   0          2d
 
 ---
 
+![avengers team](avengers.jpg)
+
 ### 3. Cluster Role
 
 ---
@@ -294,7 +300,7 @@ DCS to the rescue!
 
 ## DCS?
 
-distributed configuration store
+distributed consensus store
 
 * etcd
 * consul
@@ -315,7 +321,7 @@ Embedded: Just One Image. Fewer cluster fail scenarios.
 
 ## Bot/Autopilot
 
-![bot working](bot_traffic.jpg)
+![bot working](bot-traffic.jpg)
 
 ---
 
@@ -369,7 +375,9 @@ patroni-2   1/1       Running      master
 
 ---
 
-### 4. Session State
+![professor x orders pizza](prof_x_pizza.gif)
+
+### 4. Sessions
 
 ---
 

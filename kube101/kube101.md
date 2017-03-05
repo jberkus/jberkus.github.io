@@ -16,7 +16,7 @@ SCALE 15x
 
 #### Thanks
 
-Jerome Petrazzoni, Dusty Mabe, Mike Dorsey, Carter Morgan, SCALE 15x Crew!
+Jerome Petrazzoni, Dusty Mabe, Mike Dorsey, Carter Morgan,<br />SCALE 15x Crew!
 
 ---
 
