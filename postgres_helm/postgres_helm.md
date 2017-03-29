@@ -18,7 +18,7 @@ Kubecon EU 2017
 
 ---
 
-![state station](state_station.jpg)
+![state station](state_tram.png)
 
 ### Getting to State
 
@@ -113,7 +113,7 @@ Kubecon EU 2017
 
 * HA PostgreSQL controller
 * Etcd, Zookeeper or Consul
-* Spilo = Patroni + PostgreSQL 
+* Spilo = Patroni + PostgreSQL
 
 ---
 
@@ -166,6 +166,10 @@ Kubecon EU 2017
 * shards duplicate for redundancy
 * query node distributes queries
 * mainly for data mining (big data)
+
+---
+
+![shard diagram](shard_diagram.png)
 
 ---
 
@@ -251,3 +255,11 @@ www.projectatomic.io
 .leftlogo[![rh logo](red_hat_dingbat.png)]
 
 .rightlogo[![cc by sa](by-sa.png)]
+
+---
+
+## Photo Credits
+
+Giant rideable robot elepant courtesy of The Nantes Project: http://www.lesmachines-nantes.fr/en/<br />
+Darth Vader elephant helm created by Blank William: http://www.blankwilliam.com/ <br />
+The running robot with elephant cartoon by Mark F. Stosiak: http://www.markstosiak.com/<br />
