@@ -109,6 +109,50 @@ Kubecon EU 2017
 
 ---
 
+## Patroni
+
+* HA PostgreSQL controller
+* Etcd, Zookeeper or Consul
+* Spilo = Patroni + PostgreSQL 
+
+---
+
+![spilo_diagram](spilo_diagram.svg)
+---
+
+## Patroni customization
+
+* Callbacks (on_role_chage)
+* Custom replica creation
+* Pluggable consistency layers
+
+---
+
+## Not just autofailover
+
+* Synchronous mode
+* Cascading replication
+* Dynamic configuration
+
+---
+
+## Cluster maintenance
+* "Hands-off" mode
+* Scheduled failovers and restarts
+
+---
+
+## Controlling Patroni
+
+* REST API
+* patronictl
+
+---
+
+#### Patroni Demo
+
+---
+
 ![citus sharded](citus_sharded.png)
 
 ### CitusDB
