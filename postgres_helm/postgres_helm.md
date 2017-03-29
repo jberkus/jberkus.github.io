@@ -149,6 +149,10 @@ Kubecon EU 2017
 
 ---
 
+#### Patroni Demo
+
+---
+
 ![citus sharded](citus_sharded.png)
 
 ### CitusDB
