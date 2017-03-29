@@ -28,12 +28,12 @@ Oleksii
 
 Patroni
 - RAFT is the fabric that holds together your PostgreSQL containers
-- External consistent key-value store instead of built-in one:
+- External consistent key-value store instead of a built-in one:
   advantages:
    - PostgreSQL failure doesn't break the consensus
    - use well-tested RAFT implementations (i.e. Etcd or Consul)
   disadvantages:
-   - onen needs to operate extra services
+   - one needs to operate extra services
 Features:
 - synchronous vs asynchronous replication (consistency vs availability)
 - some parameters need to be kept in sync on all cluster nodes (max_connections)
