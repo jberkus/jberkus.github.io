@@ -118,38 +118,51 @@ Kubecon EU 2017
 ---
 
 ![spilo_diagram](spilo_diagram.svg)
----
-
-## Patroni customization
-
-* Callbacks (on_role_chage)
-* Custom replica creation
-* Pluggable consistency layers
 
 ---
 
-## Not just autofailover
+## Extensibility
 
-* Synchronous mode
-* Cascading replication
-* Dynamic configuration
+* callbacks
+* custom replica creation methods
+* pluggable consistent KV-stores
+
+---
+
+## More than autofailover
+
+* synchronous mode
+* cascading replication
+* dynamic configuration
 
 ---
 
 ## Cluster maintenance
+
 * "Hands-off" mode
 * Scheduled failovers and restarts
 
 ---
 
-## Controlling Patroni
+## Interfaces
 
 * REST API
 * patronictl
 
 ---
 
+## Helm parameters
+
+ * cluster name
+ * Etcd host
+ * number of replicas
+ * credentials
+
+---
+
 #### Patroni Demo
+
+![patroni demo](elephant_patroni_live_demo.png)
 
 ---
 
@@ -229,6 +242,14 @@ github.com/jberkus/atomicdb
 * Helm Chart:
   <br />github.com/kubernetes
   <br />/charts/incubator/patroni
+
+---
+
+## Spilo demo:
+
+ * Helm Chart:
+ <br />github.com/alexeyklyukin/
+ <br />/charts/incubator/patroni
 
 ---
 

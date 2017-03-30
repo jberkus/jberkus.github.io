@@ -26,6 +26,18 @@ Helm
 
 Oleksii
 
+Patroni
+- RAFT is the fabric that holds together your PostgreSQL containers
+- External consistent key-value store instead of a built-in one:
+  advantages:
+   - PostgreSQL failure doesn't break the consensus
+   - use well-tested RAFT implementations (i.e. Etcd or Consul)
+  disadvantages:
+   - one needs to operate extra services
+Features:
+- synchronous vs asynchronous replication (consistency vs availability)
+- some parameters need to be kept in sync on all cluster nodes (max_connections)
+
 CitusDB
 - sharded postgres
 - query node, plus shard nodes
@@ -36,6 +48,7 @@ giant robot elephant from The Nantes Project
 elephant helm by Blank Williams
 robot elephant by Robert Chew
 robot with elephant by Mark F Stosiak
+stubborn elephant by Kolja Wilcke @01k
 
 
 
