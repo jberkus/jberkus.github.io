@@ -1,0 +1,19 @@
+intro to kubernetes
+
+- who this is for
+- containerizing apps
+- microservices
+- coordinating several microservices
+- replicating
+- services & endpoints
+- configuration
+  - ENV
+  - ConfigMap
+- storage
+  - volumes
+  - persistent volumes
+- how it works
+  - DCS (etcd)
+  - apiserver
+  - kubelet
+  - flannel/proxy
