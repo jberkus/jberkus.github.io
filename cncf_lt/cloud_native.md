@@ -184,6 +184,14 @@ https://slack.cncf.io
 
 Grow the Cloud Native commons
 
+
+
+---
+
+![kubecon screenshot](kubecon.png)
+
+### Conferences!
+
 ---
 
 
@@ -194,7 +202,7 @@ web:
 
 slack:
 
-events:
+my events:
 ]
 
 .right-column[
@@ -205,8 +213,8 @@ slack.cncf.io
 www.ContainerDaysPDX.org<br />
 August 3, Portland
 
-CloudNativeCon US<br />
-December 6, Austin
+Cloud Native Portland<br />
+meetup.com/Cloud-Native-PDX/
 
 ]
 
