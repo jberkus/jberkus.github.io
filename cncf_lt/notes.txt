@@ -1,19 +1,45 @@
-intro to kubernetes
+A Foundation for Cloud Natives
 
-- who this is for
-- containerizing apps
-- microservices
-- coordinating several microservices
-- replicating
-- services & endpoints
-- configuration
-  - ENV
-  - ConfigMap
-- storage
-  - volumes
-  - persistent volumes
-- how it works
-  - DCS (etcd)
-  - apiserver
-  - kubelet
-  - flannel/proxy
+what is cloud native
+- orchestrated container clouds replacing vm clouds
+- means replacing over a decade of infra
+- four tenets
+- most of the people in this room
+
+why a foundation
+- need a "commons" for code
+  - google/kubernetes example
+  - foundationdb
+- ensure interoperatibilty
+  - no more silos
+
+projects
+orchestration:
+- kubernetes
+runtimes:
+- containerd
+- rkt
+observability:
+- prometheus
+- opentracing
+- fluentd
+interoperability:
+- linkerd
+- gRPC
+- CoreDNS
+- CNI
+
+what CNCF does
+- money
+- legal
+- events
+- documentation
+
+what CNCF does not do
+- run projects
+
+getting involved
+- events
+- meetups
+- ambassadors
+- projects

@@ -1,0 +1,98 @@
+Containers Guide for the Perplexed
+
+Maimonides
+  - Guide for the Perplexed
+  - unify Greek & Jewish Philosophy
+  - map for the middle ages
+  - also Jessie Frazelle
+
+Docker?
+  - then what are these other things?
+
+Everything you know about containers is wrong
+  - no such thing as containers
+    - combo of namespaces & cgroups
+  - add lots of other stuff
+    - like legos
+    - explain the legos
+
+Images and Containers
+  What's an image?
+  - tarball + metadata
+  - packages
+  - layers & sharing
+  Image formats
+  - Docker
+  - OCI
+  - rkt
+  Build images
+  - docker build
+  - buildah, rkt
+  Share Images
+  - registries
+    - docker hub
+    - google, quay
+    - CentOS, Fedora
+  Install Images
+  - local cache
+  - docker pull
+  - skopeo
+  Run images
+  - Docker daemon / Containerd
+  - Rkt / SystemD
+  - OCI + Systemd
+  - CRI-O
+
+From one to many
+
+  Deploying to a Cloud
+  - not just on your computer
+  - on many computers
+  - many times
+  - called "orchestration"
+  Container OS
+  - want a smaller, more immutable OS to run containers on
+  - should have container support and nothign else
+  - Atomic, CoreOS, RancherOS
+  Orchestration
+  - run many containers over many machines
+  - Kube, Swarm, Mesos, Nomad, etc.
+  - Scheduler: runs containers on various servers based on resources
+  - API server: takes requests from users & servers
+  - Agent: runs actions on servers
+  - DCS: stores state of cluster
+  - plugins for storage & networking (see below)
+  Networking
+  - Containers need to talk to each other
+  - Out of the box, containers have no network addresses
+  - need to fake a network address by manipulating kernel (iptables etc.)
+  - different tools work at different levels, can be combined
+  - Docker libnetwork, flannel, weave, calico, openvswitch, etc.
+  Discovery
+  - need to find containers in a network by name/purpose/port
+  - various tools, some DNS-based, some not
+  - CoreDNS, SkyDNS, linkerd, istio, DockerDNS, Consul
+  Storage
+  - need to store persistent data
+  - should somehow be associated with the container
+  - possibly needs to move
+  - Docker Volumes, Kubernetes Persistent Volumes, Mesos Persistent volumes
+  - otherwise uses the storage you know
+    - network storage (NAS)
+    - local storage
+    - clusters like Gluster, Ceph, ECS
+
+Hosted Solutions, CaaS and PaaS
+  - Hosted: run containers in the cloud
+  - CaaS: run containers in the cloud
+  - PaaS: push code to create containers and run in the cloud
+  Examples:
+    GKE: CaaS
+    OpenShift: PaaS/CaaS
+    Amazon CS: CaaS
+
+Stuff I didn't cover
+- monitoring
+- tracing
+- CI/CD tools
+- API tools###
