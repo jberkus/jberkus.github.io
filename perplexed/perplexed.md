@@ -63,11 +63,19 @@ OSB 2017
 
 ---
 
-## Interlocking features
+.left-column[
+![stack of kids in a coat](kids_coat.jpg)
+]
 
+.right-column[
+## &nbsp; Interlocking parts
+<br />
+<br />
+<br />
 * Linux Namespaces
 * Cgroups
 * Networking tricks
+]
 
 ---
 
@@ -207,11 +215,11 @@ background-image: url(many_containers.jpg)
 
 ## Parts of Orchestration
 
-1. Scheduler: dispatches containers to machines
-2. Agents: manages containers on each machine
-3. API Server: communicates between machines
-4. DCS: shared data store for cluster
-5. Plugins: storage, networking, etc.
+1. **Scheduler**: dispatches containers to machines
+2. **Agents**: manages containers on each machine
+3. **API Server**: communicates between machines
+4. **DCS**: shared data store for cluster
+5. **Plugins**: storage, networking, etc.
 
 ---
 

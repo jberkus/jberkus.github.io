@@ -1,0 +1,66 @@
+schrodinger's elephant
+  healthy or not?
+  elephant in a box
+  live vs. dead
+  closed box
+  sensor?
+
+the shrodinger's elephant experiment
+
+running PostgreSQL in containers
+why?
+  installation
+  dev --> stage --> prod
+    (* configured the same way)
+  self-service
+  handling small databases
+
+
+
+why not?
+
+
+The Experiment
+  My name is Erwin Schrodinger ...
+  Take elephant
+  Put elephant in box
+  close box
+  is elephant alive?
+  is it dead?
+
+Why would we put an elephant in a box?
+  portability
+  orchestration
+  self-service
+
+Reasons NOT to put an elephant in a box.
+  Big Elephant
+  Known issues
+
+The problem of observability.
+  Used to just looking
+  Health check
+    Live-dead sensor
+  Specific problem areas
+  Why polling doesn't work
+
+Solutions
+  Monitoring software
+    Agent problem (microservices)
+    Polling problem
+  Log consolidation
+    Volumetric
+    Very asyncronous
+    Hard to access data
+  Internal daemon
+    present API
+    update metadata
+    no more polling problem
+
+Demo of Patroni/Openshift setup
+
+Work to be done on Postgres
+  no more "tail the log"
+  expose pg_hba, pg_config
+  expose replication errors, other errors
+  monitoring role
