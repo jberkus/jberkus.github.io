@@ -375,6 +375,10 @@ what about performance analysis?
 
 ---
 
+![powa screenshot](powa-web-1.png)
+
+---
+
 ## POWA Sidecar Container
 
 * always available

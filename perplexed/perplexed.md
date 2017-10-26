@@ -8,7 +8,7 @@ Josh Berkus
 
 Red Hat
 
-OSB 2017
+PDX DevOps 10/17
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]
@@ -28,10 +28,6 @@ OSB 2017
 ---
 
 >"A sensible man should not demand of me, or hope that when we mention a subject, we shall make a complete exposition of it."
-
----
-
-![jessie frazelle](jessfraz.jpg)
 
 ---
 
@@ -231,7 +227,7 @@ background-image: url(many_containers.jpg)
 
 ## Networking
 
-*out of the box, containers have only the host network, so we need to fake a network using Linux kernel tools so that they can pretend to be servers*
+*out of the box, containers have only the host network, so we need to fake a network using Linux kernel tools and networking components so that they can pretend to be servers*
 
 ---
 
@@ -256,6 +252,18 @@ some DNS, some not
 ![discovery tools](discovery_services.png)
 
 ### Discovery Tools
+
+---
+
+![istio logo](istio.png)
+
+### "Service Mesh"
+
+---
+
+## What's a "service mesh"?
+
+![istio diagram](istio_diagram.svg)
 
 ---
 
@@ -284,10 +292,11 @@ background-image: url(container_heap.jpg)
 
 ---
 
-## Hosting: CaaS and PaaS
+## Hosting: CaaS, PaaS, FaaS
 
-* CaaS: someone lets you run containers on their infra (GKE, Amazon CS)
-* PaaS: someone lets you run applications as containers on their infra (OpenShift, DEIS)
+* **CaaS**: run **containers** on their infra (GKE, Amazon CS)
+* **PaaS**: run **applications** as containers on their infra (OpenShift, DEIS)
+* **FaaS**: run **code functions** as containers on their infra (Serverless)
 
 ---
 
@@ -308,24 +317,21 @@ background-image: url(container_heap.jpg)
 
 .left-column[
 web:
-
-IRC:
+<br />
 
 events:
 ]
 
 .right-column[
+jberkus.github.io
 www.databasesoup.com
 www.projectatomic.io
-
-\#atomic
-
-www.ContainerDaysPDX.org<br />
-August 3, Portland
 
 Cloud Native Portland<br />
 meetup.com/Cloud-Native-PDX/
 
+LISA - KubeCon<br />
+SCALE Container Day<br />
 ]
 
 .leftlogo[![rh logo](red_hat_dingbat.png)]
