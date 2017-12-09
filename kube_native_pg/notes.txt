@@ -1,0 +1,33 @@
+Kube-Native PostgreSQL
+
+The Goal
+  postgresctl deploy postgres-1
+
+Patroni Refresher
+  How it works
+
+Kube-Integrated Patroni
+  - moving from separate etcd to kube api
+    - standard patroni
+    - new model
+  - how leader election works
+    - endpoint vs configmap
+    - leader election?
+
+Operator Status
+  - Crunchy Operator
+    - crunchy implementation
+    - operator functions
+  - patroni operator
+    - current functions
+    - implementation chart
+
+Limitations/future work
+  - complete operator
+  - Need separate CLI
+  - Statefulset scaling down the master
+  - No elegant way to handle config files
+  - security issues?
+  - growing disk space
+  - failing over federation
+  - Postgres Logical replication
