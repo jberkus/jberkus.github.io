@@ -1,4 +1,4 @@
-## Kube-Native Postgres
+## Automatic for the People
 
 ![wheel of pgs](wheel_of_phants.png)
 
@@ -7,7 +7,7 @@ Josh Berkus
 
 Red Hat OSAS
 
-KubeCon US 2017
+PDXPUG Feb 2018
 ]
 
 .leftlogo[![redhat logo](red_hat_dingbat.png)]
@@ -40,6 +40,7 @@ Make deploying PostgreSQL on Kubernetes as boring as deploying Nginx
 
 ## menu du jour
 
+* why Kubernetes?
 * explain patroni
 * patroni: the old way
 * patroni: kube-native
@@ -48,7 +49,62 @@ Make deploying PostgreSQL on Kubernetes as boring as deploying Nginx
 
 ---
 
-## what changed?
+![wheel of pgs](wheel_of_phants.png)
+
+### why Kubernetes?
+
+---
+
+## HA is hard
+
+* detecting failure
+* split-brain
+* fencing
+* replacement nodes
+
+---
+
+*Kubernetes: distributed system automation for everyone*
+
+---
+
+## auto Kube
+
+* scheduling
+* resource management
+* maintaining pool
+* routing
+* terminating failed nodes
+
+---
+
+## when?
+
+Good For: many small databases, deployed and updated as part of an automated DevOps process.
+
+Bad For: single giant, high-TPS database central to many applications.
+
+---
+
+## easier things
+
+* manage all the PGs!
+* dev teams own dbs
+* no on-call
+* expand capacity
+
+---
+
+## harder things
+
+* db admin
+* latency/performance
+* resource management
+* operator error
+
+---
+
+## new in patroni
 
 1. tighter kube integration
 2. operator
@@ -192,6 +248,12 @@ Fully automated replication and failover
 
 ---
 
+## what?
+
+![a bot](bot-traffic.jpg)
+
+---
+
 ## Why?
 
 * self-documenting clusters
@@ -238,7 +300,7 @@ pgo create backup mycluster
 
 ---
 
-![container suite](crunchy_containers.png)
+![container suite](crunchy-containers.png)
 
 ---
 
