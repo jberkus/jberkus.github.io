@@ -1,0 +1,34 @@
+Indroduction
+  - introduce us
+  - explain "upstream team"
+  - explain BOF structure
+
+What is Atomic?
+  - what it's for
+  - how it differs from standard Fedora/CentOS/RHEL
+    - layers not packages
+    - minimal install
+    - install applications as containers
+  - advantages of Atomic
+    - lean & mean
+    - rollback
+    - rebase
+    - modernize
+  - future directions
+    - modularity
+    - Atomic workstation
+
+Migrating to Atomic
+  - already running in containers: easy
+  - otherwise:
+    - CentOS/Fedora: download & install
+      - avail on AWS, DO
+    - RHEL user? Already have entitlement
+    - need to containerize userspace apps
+      (or get them from repositories)
+    - containerize admin apps or make sure they are rpms
+      - install as layers
+      - show layers diagram
+    - update admin tools (WIP)
+    - consider installing OpenShift
+note

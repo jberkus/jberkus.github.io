@@ -1,0 +1,6 @@
+#!/bin/bash
+
+su - postgres -c "/usr/bin/pg_ctl -D /var/lib/pgsql/data start"
+
+cd /notebook
+ipython notebook --profile=nbserver

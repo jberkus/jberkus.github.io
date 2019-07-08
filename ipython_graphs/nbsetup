@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+ipython profile create nbserver
+cp /notebook/ipython_notebook_config.py /root/.ipython/profile_nbserver/
+
+exit 0

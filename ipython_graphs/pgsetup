@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+/usr/bin/initdb -D /var/lib/pgsql/data
+/usr/bin/pg_ctl -w -D /var/lib/pgsql/data start
+/usr/bin/createuser -s root
+/usr/bin/createdb --owner=root statsdemo
+/usr/bin/pg_restore -U root -O -x -d statsdemo /notebook/statsdemo.dump
+/usr/bin/pg_ctl -w -D /var/lib/pgsql/data stop
+
+exit 0
