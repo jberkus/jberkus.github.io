@@ -235,31 +235,6 @@ Planning time: 15.035 ms
 Execution time: 13919.004 ms
 
 ```
----
-
-## buffers
-
-```
-
-
-
-
-
-
-
-
-
-Bitmap Heap Scan on people  
-   Buffers: shared hit=18145 read=69783
-
-
-
-   ->  Bitmap Index Scan on people_jsquery
-         Buffers: shared hit=1 read=39
-
-.
-
-```
 
 ---
 
@@ -309,26 +284,6 @@ Output: patrons.card_no, patrons.last_name,
         patrons.state, patrons.birthdate,
         patrons.status, patrons.issued_on
         Index Cond: (patrons.card_no = 22827268400294)
-   ...
-```
----
-
-## verbose
-
-```
-
-
-Output: patrons.card_no, patrons.last_name,
-  patrons.first_name, loans.copy_id
-
-
-
-        Output: patrons.card_no, patrons.first_name,
-        patrons.middle, patrons.last_name,
-        patrons.address, patrons.city,
-        patrons.state, patrons.birthdate,
-        patrons.status, patrons.issued_on
-
    ...
 ```
 
