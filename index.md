@@ -9,11 +9,10 @@ hosting.  Below are what's in here.
 
 ## Talks
 
-### Kubernetes Talks
+### Kubernetes/CNCF Talks
 
 | Talk (slides) | Video | Date | Comments |
 | ---------------- | ----- | ------------- | --------------------------- |
-
 | [Setting up Kubernetes on CentOS](kube_on_centos) | | | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes) |
 | [Kubernetes 1.11 LT](pdf_presos/kubernetes_111.pdf) | | | | 
 | [You Got Your VM In My Container](vm-in-container) | | | | 
@@ -21,6 +20,7 @@ hosting.  Below are what's in here.
 | [State: That's What's Happening](state_happening) | | | | 
 | [Kubernetes 1.3](kubernetes_13) | | | | 
 | [Kubernetes 101](kube101) | | | | 
+| [Bots, Not Cattle](bots_not_cattle) | | | [Ignite version](pdf_presos/bots_not_cattle_ignite.pdf), [Automacon Keynote](pdf_presos/bots_not_cattle_automacon.pdf)
 
 ### Community Talks
 
