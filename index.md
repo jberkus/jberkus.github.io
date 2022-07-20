@@ -7,28 +7,35 @@ This page is full of open source stuff I work on, and
 talks I've given, which require hosting, but don't require real
 hosting.  Below are what's in here.
 
+## Roles
+
+* Kubernetes Community Architect at [Red Hat Open Source Practice Office](https://www.redhat.com/en/blog/channel/red-hat-open-source-program-office)
+* [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) Co-Chair for the CNCF
+* [SIG Contributor Experience Co-Chair](https://github.com/kubernetes/community/tree/master/sig-contributor-experience) for Kubernetes
+* [OSI Board Member](https://opensource.org/board)
+
 ## Talks
 
 ### Kubernetes/CNCF Talks
 
-| Talk (slides) | Video | Date | Comments |
-| ---------------- | ----- | ------------- | --------------------------- |
-| [Setting up Kubernetes on CentOS](kube_on_centos) | | | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes) |
-| [Kubernetes 1.11 LT](pdf_presos/kubernetes_111.pdf) | | | | 
-| [You Got Your VM In My Container](vm-in-container) | | | | 
-| [Containers: A Guide for the Perplexed](perplexed) | | | | 
-| [State: That's What's Happening](state_happening) | | | | 
-| [Kubernetes 1.3](kubernetes_13) | | | | 
-| [Kubernetes 101](kube101) | | | | 
-| [Bots, Not Cattle](bots_not_cattle) | | | [Ignite version](pdf_presos/bots_not_cattle_ignite.pdf), [Automacon Keynote](pdf_presos/bots_not_cattle_automacon.pdf)
+| Talk (slides)                                       | Video | Date | Comments |
+|:----------------------------------------------------|:------|:-----|:--------|
+| [Setting up Kubernetes on CentOS](kube_on_centos)   |       |      | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes) |
+| [Kubernetes 1.11 LT](pdf_presos/kubernetes_111.pdf) |       |      |         |
+| [You Got Your VM In My Container](vm-in-container)  |       |      |         |
+| [Containers: A Guide for the Perplexed](perplexed)  |       |      |         |
+| [State: That's What's Happening](state_happening)   |       |      |         |
+| [Kubernetes 1.3](kubernetes_13)                     |       |      |         |
+| [Kubernetes 101](kube101)                           |       |      |         |
+| [Bots, Not Cattle](bots_not_cattle)                 |       |      | [Ignite version](pdf_presos/bots_not_cattle_ignite.pdf), [Automacon Keynote](pdf_presos/bots_not_cattle_automacon.pdf) |
 
 ### Community Talks
 
-| Talk (slides) | Video | Date | Comments |
-| ---------------- | ----- | ------------- | --------------------------- |
-| [Governance: Six Types and Three Templates](gov6/) | | | | 
-| [Why Database Projects Can't Leave Licenses Alone](pdf_presos/dbs_and_licenses.pdf) | [video](https://drive.google.com/file/d/1MXv8Jctvw3q0uybr5qZVP-u4nlgk1ISL/view?usp=sharing) | | |
-| [What Sponsors Want](pdf_presos/what_sponsors_want.pdf) | | | | 
+| Talk (slides)                                                                       | Video                                                                                       | Date | Comments |
+|:------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:-----|:-|
+| [Governance: Six Types and Three Templates](gov6/)                                  |                                                                                             |      |  |
+| [Why Database Projects Can't Leave Licenses Alone](pdf_presos/dbs_and_licenses.pdf) | [video](https://drive.google.com/file/d/1MXv8Jctvw3q0uybr5qZVP-u4nlgk1ISL/view?usp=sharing) |      |  |
+| [What Sponsors Want](pdf_presos/what_sponsors_want.pdf)                             |                                                                                             |      |  |
 
 ### Ignite Talk Videos
 
@@ -42,28 +49,28 @@ I love doing Ignite talks!  Here are some of mine:
 
 ### Database Talks
 
-| Talk (slides) | Video | Date | Comments |
-| ---------------- | ----- | ------------- | --------------------------- |
-| [Explain Explained (for Prisma.js)](explain2/) | | | | 
-| [Postgres GUCS Tutorial](https://github.com/jberkus/annotated.conf) | | | | 
-| [Kube-Native Postgres](kube_native_pg) | | | | 
-| [Schrödinger's Elephant](shrodinger) | | | | 
-| [Containerized Clustered Postgres](container_cluster_pg) | | | | 
-| [Postgres and PetSet](petset_postgres) | | | | 
-| [How I Learned To Stop Worrying and Love Failover](love_failover) | | | | 
-| [Full Automatic Database](full_automatic_db) | | | | 
-| [PostgreSQL 9.5 for Big Data](95_big_data) | | | | 
-| [Postgres Performance In 15 Minutes](performance_in_15_min/index.html) | | | | 
-| [Explain Explained](explain_explained/index.html) | | | |
-| [Postgres + Scipy For Great Stats](postgres_python_great_stats/index.html) | | | [SQL file](postgres_python_great_stats/builddb.sql)
+| Talk (slides)                                                              | Video | Date | Comments |
+|:---------------------------------------------------------------------------|:------|:-----|:-|
+| [Explain Explained (for Prisma.js)](explain2/)                             |       |      |  |
+| [Postgres GUCS Tutorial](https://github.com/jberkus/annotated.conf)        |       |      |  |
+| [Kube-Native Postgres](kube_native_pg)                                     |       |      |  |
+| [Schrödinger's Elephant](shrodinger)                                       |       |      |  |
+| [Containerized Clustered Postgres](container_cluster_pg)                   |       |      |  |
+| [Postgres and PetSet](petset_postgres)                                     |       |      |  |
+| [How I Learned To Stop Worrying and Love Failover](love_failover)          |       |      |  |
+| [Full Automatic Database](full_automatic_db)                               |       |      |  |
+| [PostgreSQL 9.5 for Big Data](95_big_data)                                 |       |      |  |
+| [Postgres Performance In 15 Minutes](performance_in_15_min/index.html)     |       |      |  |
+| [Explain Explained](explain_explained/index.html)                          |       |      |  |
+| [Postgres + Scipy For Great Stats](postgres_python_great_stats/index.html) |       |      | [SQL file](postgres_python_great_stats/builddb.sql) |
 
 ### Other Technical Talks
 
-| Talk (slides) | Video | Date | Comments |
-| ---------------- | ----- | ------------- | --------------------------- |
-| [Ansible 101 self-paced mini-tutorial](https://github.com/jberkus/ansible101) | | | | 
-| [Docker > Virtualenv](docker_gt_virtualenv) | | | | 
-| [Ad-Hoc Graphs with Ipython](https://github.com/jberkus/jberkus.github.io/tree/master/ipython_graphs) | | | Preso is entirely in python Notebooks
+| Talk (slides)                                                                                         | Video | Date | Comments |
+|:------------------------------------------------------------------------------------------------------|:------|:-----|:-|
+| [Ansible 101 self-paced mini-tutorial](https://github.com/jberkus/ansible101)                         |       |      |  |
+| [Docker > Virtualenv](docker_gt_virtualenv)                                                           |       |      |  |
+| [Ad-Hoc Graphs with Ipython](https://github.com/jberkus/jberkus.github.io/tree/master/ipython_graphs) |       |      | Preso is entirely in python Notebooks |
 
 ### Other Videos
 
