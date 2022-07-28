@@ -1,0 +1,23 @@
+- welcome
+  - who I am
+  - who this is for
+- gov?
+  - definition of governance
+  - why it's important
+    - fairness
+    - contributors
+    - avoiding fights
+- the six types
+ 
+  - the progression:
+    - "none"
+    - founder/leader
+    - council
+    - electoral
+  - orthagonal
+    - corporate
+    - foundation
+- three examples
+  - maintainer council
+  - federation
+  - elections

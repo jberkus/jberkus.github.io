@@ -7,7 +7,7 @@ This page is full of open source stuff I work on, and
 talks I've given, which require hosting, but don't require real
 hosting.  Below are what's in here.
 
-## Roles
+## Roles 
 
 * Kubernetes Community Architect at [Red Hat Open Source Practice Office](https://www.redhat.com/en/blog/channel/red-hat-open-source-program-office)
 * [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) Co-Chair for the CNCF
@@ -33,6 +33,7 @@ hosting.  Below are what's in here.
 
 | Talk (slides)                                                                       | Video                                                                                       | Date | Comments |
 |:------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:-----|:-|
+| [Choose Your Candidate (voting for OSS projects)](vote/)                            |                                                                                             |      |  |
 | [Governance: Six Types and Three Templates](gov6/)                                  |                                                                                             |      |  |
 | [Why Database Projects Can't Leave Licenses Alone](pdf_presos/dbs_and_licenses.pdf) | [video](https://drive.google.com/file/d/1MXv8Jctvw3q0uybr5qZVP-u4nlgk1ISL/view?usp=sharing) |      |  |
 | [What Sponsors Want](pdf_presos/what_sponsors_want.pdf)                             |                                                                                             |      |  |
