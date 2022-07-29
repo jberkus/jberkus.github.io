@@ -86,7 +86,7 @@ gh.com/cncf/project-template
 
 ### What do Open Source projects need for elections?
 
-1. Online
+1. Online & public
 2. Secret ballot
 3. Voter authentication
 4. Archival records
@@ -96,7 +96,7 @@ gh.com/cncf/project-template
 
 ### What do Open Source projects need for elections?
 
-1. **Online**
+1. **Online & public**
 2. Secret ballot
 3. **Voter authentication**
 4. Archival records
@@ -133,7 +133,7 @@ gh.com/cncf/project-template
 
 ### What do Open Source projects need for elections?
 
-1. Online
+1. Online & public
 2. **Secret ballot**
 3. Voter authentication
 4. Archival records
@@ -141,7 +141,7 @@ gh.com/cncf/project-template
 
 ---
 
-### Secret Ballots
+# Secret Ballots
 
 secret from:
 
@@ -153,9 +153,29 @@ secret from:
 
 ---
 
+#### ~~Blockchain~~
+
+---
+
+# Secret But Public
+
+By encrypting connections between voters and ballots we can have public or semi-public systems with secret ballots
+
+```
+id        | 60
+ballot_id | \x3132302dca9588dd ...
+
+election_id | 1
+rank        | 1
+candidate   | elekto
+voter       | 702a87f5-243a-49d0-8bcb-147d7a5b9ef9
+```
+
+---
+
 ### What do Open Source projects need for elections?
 
-1. Online
+1. Online & public
 2. Secret ballot
 3. Voter authentication
 4. Archival records
@@ -180,7 +200,7 @@ Called "plurality" or "first-past-the-post"
 
 # The problem with plurality
 
-*An extreme candidate with a dedicated minority of followers more often wins over a generally liked candidate*
+*An extreme candidate with a dedicated minority of followers often wins over a generally liked candidate*
 
 ---
 
@@ -386,7 +406,7 @@ A closed-source voting system created by verifiable election lobbyists as a busi
 
 # What's Elekto?
 
-A GitOps-centric election system developed by CNCF/Kubernetes contributors to support CNCF project elections.
+A GitOps-centric election system developed by CNCF/Kubernetes contributors to support CNCF project elections.  A project of TAG Contributor Strategy.
 
 ---
 
@@ -457,8 +477,8 @@ github/cncf/project-templates<br />
 * [Helios](https://heliosvoting.org)
 * [OpaVote](https://www.opavote.com)
 * [Elekto](https://elekto.dev)
-* [Instant Runoff Voting]()
-* [Condorcet Method]()
+* [Instant Runoff Voting](https://en.wikipedia.org/wiki/Ranked_voting)
+* [Condorcet Method](https://en.wikipedia.org/wiki/Condorcet_method)
 * [Steering Elections Template](https://github.com/cncf/project-template)
 
 
@@ -466,7 +486,7 @@ github/cncf/project-templates<br />
 
 # Licensing
 
-This presentation is licensed Creative Commons Share-Alike 4.0.
+This presentation is licensed [Creative Commons Share-Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 Trademarks and logos included herein belong to their respective owners,
 and are included to refer to their respective products.
