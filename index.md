@@ -92,8 +92,10 @@ I love doing Ignite talks!  Here are some of mine:
 
 ## Contact
 
-* My employer, <a href="http://www.redhat.com">Red Hat</a>, where I work on <http://www.kubernetes.io>Kubernetes</a>.
+* My employer, <a href="http://www.redhat.com">Red Hat</a>, where I work on [Kubernetes](http://www.kubernetes.io)
 * My tech blog, <a href="http://www.databasesoup.com">Database Soup</a>
+* [Mastodon @fuzzychef@m6n.io](https://m6n.io/web/@fuzzychef)
 * Twitter <a href="http://twitter.com/FuzzyChef">@FuzzyChef</a>
 * My food and pottery blog <a href="http://www.fuzzychef.org">FuzzyChef</a>
+* My online [pottery store](http://www.fuzzychef.com)
 * I can also be found on Kubernetes, CNCF, Knative, and other Slacks as "jberkus"
