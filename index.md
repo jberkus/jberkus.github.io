@@ -7,6 +7,17 @@ This page is full of open source stuff I work on, and
 talks I've given, which require hosting, but don't require real
 hosting.  Below are what's in here.
 
+## Contact
+
+* My employer, <a href="http://www.redhat.com">Red Hat</a>, where I work on [Kubernetes](http://www.kubernetes.io)
+* My tech blog, <a href="http://www.databasesoup.com">Database Soup</a>
+* <a rel="me" href="https://m6n.io/@fuzzychef">Mastodon</a>
+* My food and pottery blog <a href="http://www.fuzzychef.org">FuzzyChef</a>
+* My online [pottery store](http://www.fuzzychef.com)
+* I can also be found on Kubernetes, CNCF, Knative, and other Slacks as "jberkus"
+
+I am no longer on Twitter.
+
 ## Roles 
 
 * Kubernetes Community Architect at [Red Hat Open Source Practice Office](https://www.redhat.com/en/blog/channel/red-hat-open-source-program-office)
@@ -89,13 +100,3 @@ I love doing Ignite talks!  Here are some of mine:
 * [Patroni: Your Patron Saint of HA](https://www.youtube.com/watch?v=OH9WSEiMsAw)
 * [HOWTO DR](https://www.youtube.com/watch?v=Tqb5964JzlI)
 * [Ad-Hoc Database Graphs with IPython](https://www.youtube.com/watch?v=t8DKgP9roxQ)
-
-## Contact
-
-* My employer, <a href="http://www.redhat.com">Red Hat</a>, where I work on [Kubernetes](http://www.kubernetes.io)
-* My tech blog, <a href="http://www.databasesoup.com">Database Soup</a>
-* [Mastodon @fuzzychef@m6n.io](https://m6n.io/web/@fuzzychef)
-* Twitter <a href="http://twitter.com/FuzzyChef">@FuzzyChef</a>
-* My food and pottery blog <a href="http://www.fuzzychef.org">FuzzyChef</a>
-* My online [pottery store](http://www.fuzzychef.com)
-* I can also be found on Kubernetes, CNCF, Knative, and other Slacks as "jberkus"
