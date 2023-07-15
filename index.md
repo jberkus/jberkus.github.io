@@ -18,7 +18,7 @@ hosting.  Below are what's in here.
 
 I am no longer on Twitter.
 
-## Roles 
+## Roles
 
 * Kubernetes Community Architect at [Red Hat Open Source Practice Office](https://www.redhat.com/en/blog/channel/red-hat-open-source-program-office)
 * [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) Co-Chair for the CNCF
@@ -31,7 +31,7 @@ I am no longer on Twitter.
 
 | Talk (slides)                                       | Video | Date | Comments                                                                                                               |
 |:--------------------------------------------------- |:----- |:---- |:---------------------------------------------------------------------------------------------------------------------- |
-| [The Cloud Native Burrito](pdf_presos/cloud_native_burrito.pdf)                                                    |       |      |                                                                                                                        |
+| [The Cloud Native Burrito](pdf_presos/cloud_native_burrito.pdf)  [25 min version](pdf_presos/cloud_native_burrito_25m.pdf)                                                  |       |      |                                                                                                                        |
 | [Setting up Kubernetes on CentOS](kube_on_centos)   |       |      | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes)                                                 |
 | [Kubernetes 1.11 LT](pdf_presos/kubernetes_111.pdf) |       |      |                                                                                                                        |
 | [You Got Your VM In My Container](vm-in-container)  |       |      |                                                                                                                        |
