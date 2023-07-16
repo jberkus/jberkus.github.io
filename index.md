@@ -31,8 +31,8 @@ I am no longer on Twitter.
 
 | Talk (slides)                                       | Video | Date | Comments                                                                                                               |
 |:--------------------------------------------------- |:----- |:---- |:---------------------------------------------------------------------------------------------------------------------- |
-| [The Cloud Native Burrito](pdf_presos/cloud_native_burrito.pdf) ([25min version](pdf_presos/cloud_native_burrito_25m.pdf))                                                  |       |      |                                                                                                                        |
-| [Setting up Kubernetes on CentOS](kube_on_centos)   |       |      | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes)                                                 |
+| [The Cloud Native Burrito](pdf_presos/cloud_native_burrito.pdf) ([25min version](pdf_presos/cloud_native_burrito_25m.pdf)) | [SeaGL video](https://archive.org/details/SeaGL2022-Josh_Berkus-The_Cloud_Native_Burrito)       |      |                                                                                                                        |
+| [Setting up Kubernetes on CentOS](kube_on_centos)   |      |      | [Scripts repo for setup](https://github.com/jberkus/centos-kubernetes)                                                 |
 | [Kubernetes 1.11 LT](pdf_presos/kubernetes_111.pdf) |       |      |                                                                                                                        |
 | [You Got Your VM In My Container](vm-in-container)  |       |      |                                                                                                                        |
 | [Containers: A Guide for the Perplexed](perplexed)  |       |      |                                                                                                                        |
