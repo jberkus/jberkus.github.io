@@ -45,6 +45,7 @@ I am no longer on Twitter.
 
 | Talk (slides)                                                                       | Video                                                                                       | Date | Comments |
 |:------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------|:-----|:-|
+| [FOSS Must Be Discrimination Free](pdf_presos/discrimination_free.pdf) | | | |
 | [Choose Your Candidate (voting for OSS projects)](vote/)                            |                                                                                             |      |  |
 | [Governance: Six Types and Three Templates](gov6/)                                  |                                                                                             |      |  |
 | [Why Database Projects Can't Leave Licenses Alone](pdf_presos/dbs_and_licenses.pdf) | [video](https://drive.google.com/file/d/1MXv8Jctvw3q0uybr5qZVP-u4nlgk1ISL/view?usp=sharing) |      |  |
